@@ -1,0 +1,52 @@
+/* ===== Scrollbar CSS ===== */
+/* Firefox */
+* {
+  scrollbar-width: auto;
+  scrollbar-color: #e0e0e0 #fcfcfc;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 0px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #fcfcfc00;
+}
+
+*::-webkit-scrollbar-thumb {
+  border-radius: 0px;
+  border: 0px solid #ffffff;
+}
+
+.ql-editor {
+  height: 45vh;
+}
+
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+.navblur {
+  border-radius: 16px;
+  backdrop-filter: blur(8.7px);
+  -webkit-backdrop-filter: blur(8.7px);
+  border: 1px solid rgba(19, 34, 55, 0.2);
+}
+
+
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 1000px white inset;
+}
+
+input:-webkit-autofill:focus {
+  -webkit-box-shadow: 0 0 0 1000px white inset;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+button:focus {
+  outline: none;
+}

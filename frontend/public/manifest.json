@@ -1,0 +1,26 @@
+{
+  "name": "iNote",
+  "short_name": "iNote",
+  "description": "My notes application is an end-to-end application that combines a MERN (MongoDB, Express, React, Node.js) backend with a React frontend using the Tailwind CSS framework. It leverages the core concepts of React, including its built-in hooks and React Router, to provide a seamless user experience. The application utilizes a MongoDB database for efficient data storage and retrieval. One of the key features of my notes app is the ability to perform CRUD (Create, Read, Update, Delete) operations on notes. Users can create new notes, view existing ones, update their content, and delete notes they no longer need. The note editor within the app provides a comprehensive set of text editing features, allowing users to format and style their notes as desired. To ensure secure user authentication, my app incorporates JWT (JSON Web Token) authentication. When users log in, their credentials are verified by the Express backend, and upon successful authentication, a JWT token is generated and provided to the client. This token is then used for subsequent requests to authenticate and authorize users, ensuring that only authenticated users can access protected routes and perform actions specific to their account. By combining the power of the MERN stack, React's flexibility and reusability, and the visual enhancements provided by the Tailwind CSS framework, my notes application offers a robust and user-friendly solution for managing notes effectively. Users can securely create, edit, and organize their notes while enjoying a smooth and intuitive user interface.",
+  "icons": [
+    {
+      "src": "/favicon.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "start_url": "/",
+  "theme_color": "#ffffff",
+  "background_color": "#ffffff",
+  "display": "standalone"
+}

@@ -32,7 +32,7 @@ const MyProfile = () => {
 
   return (
     
-    <div className="flex justify-center flex-col items-center py-3 px-6 lg:px-36 lg:py-16 w-full h-full  ">
+    <div className="flex justify-center flex-col items-center py-5 my-0 px-6 lg:px-36 lg:py-16 w-full h-screen  ">
        <div className="w-full pb-5 ">
        <Breadcrumbs className="dark:bg-[#2195f314] dark:border-none">
       <Link to="/" className="opacity-60 dark:text-[#eee]">

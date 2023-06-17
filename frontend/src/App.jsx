@@ -46,7 +46,6 @@ function App() {
             <Route exact path="/signup" element={<SignUp />} />
           </Routes>
         </div>
-
         <App_Alert />
       </BrowserRouter>
     </>

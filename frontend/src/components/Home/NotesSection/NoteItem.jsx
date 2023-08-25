@@ -13,7 +13,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import NoteContext from "../../../context/notes/NoteContext";
 import { Spinner } from "@material-tailwind/react"
-
+import Parser from 'react-html-parser';
 
 const NoteItem = (props) => {
 
@@ -42,10 +42,10 @@ const NoteItem = (props) => {
           }
         </Typography>
         <Typography className="h-44 lg:h-40 flex  w-full font-light dark:text-[#eee]">
-          {/* {parse(yourHtmlString)} */}
+        {Parser("hello")}
           {props.description.length > 250
-                ? props.description.replace(/(<([^>]+)>)/ig,"").slice(0, 250) + "........"
-                : props.description.replace(/(<([^>]+)>)/ig,"")
+                ? Parser(props.description.slice(0, 250) + "........")
+                : Parser(props.description)
           }
         </Typography>
       </CardBody>

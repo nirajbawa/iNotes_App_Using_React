@@ -53,7 +53,7 @@ const Notes = () => {
   };
 
   return (
-    <div className={`flex justify-center flex-wrap content-start items-center  gap-8 lg:gap-10 lg:gap-x-12 pt-0 ${Notes.notes.length!=0?"pb-28":"h-screen overflow-hidden"}   px-6 lg:px-32 lg:py-32 w-full h-full dark:bg-[#0f172a]`}>
+    <div className={`flex justify-center flex-wrap content-start items-center h-full  gap-8 lg:gap-10 lg:gap-x-12 pt-0 ${Notes.notes.length!=0?"pb-28":"h-screen overflow-hidden"} ${Notes.notes.length==1?"pb-96":""}  px-6 lg:px-32 lg:py-32 w-full h-full dark:bg-[#0f172a]`}>
       {Notes.notes.length == 0 && (
         <div className="w-full h-96">
           <Lottie

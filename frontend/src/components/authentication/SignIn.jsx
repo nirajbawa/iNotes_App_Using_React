@@ -22,7 +22,6 @@ const SignIn = () => {
     }
 
     
-
     useEffect(()=>{
         if(validator.isEmail(credentials.email)  && credentials.password.match(/([^\s])/) && credentials.password.length>=8)
         {

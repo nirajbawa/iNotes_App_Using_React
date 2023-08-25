@@ -18,11 +18,8 @@ function App() {
     navList: [],
   };
 
-  
-
   useEffect(()=>{
-    AlertCon.detectTheme()
-    
+    AlertCon.detectTheme();
   }, [])
 
   return (

@@ -180,11 +180,12 @@ const NoteState = (props) => {
             // logic to edit Note in client
             for (let i = 0; i < notes.length; i++) {
               let element = notes[i];
-              if (element._id == id) {
+              if (element._id == id) 
+              {
                 element.title = data.title;
                 element.description = data.description;
                 element.tag = data.tag;
-                element.Date = data.Date
+                element.Date = data.Date;
               }
             }
 

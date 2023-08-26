@@ -42,7 +42,6 @@ const NoteItem = (props) => {
           }
         </Typography>
         <Typography className="h-44 lg:h-40 flex  w-full font-light dark:text-[#eee]">
-        {Parser("hello")}
           {props.description.length > 250
                 ? Parser(props.description.slice(0, 250) + "........")
                 : Parser(props.description)
